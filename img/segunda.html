@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPECIALIDADES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div>
+        <h1 id="titulo">Cadastro de Pacientes</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+        <div id="check">
+            <label><strong>Selecione sua opção:</strong></label><br><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="tecnologia1">Consultas</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+            <label for="tecnologia3">Marcação de Exames</label>
+            
+            
+        </div>
+
+        
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome completo</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+                 
+        <!-- Campo de Telefone com-->
+        <div class="campo">
+            <label for="telefone"><strong>Telefone</strong></label>
+            <input type="Telefone" name="Telefone" id="Telefone" required>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Agende a sua Consulta</strong></label>
+            
+            <label>
+                <input type="radio" name="clinico geral" value="clínico Geral">Clínico Geral</label>
+            <label>
+                <input type="radio" name="especialidade" value="Especialidade">Especialidade</label>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="Consulta"><strong>Especialidade</strong></label>
+            <select id="consulta" required>
+              <option selected disabled value="">Tipo de Médico</option>
+              <option>Clínico Geral</option>
+              <option>Pediatria</option>
+              <option>Pré-Natal</option>
+            </select>
+        </div>
+
+       <div class="data">
+        <label for="escolha o seu dia"></label>
+        <input type="datetime-local" nome="date">
+       </div>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>sugestões: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>  
+        
+       
+             
+       
+    </form>
+    
+    
+      <div class="voltar">
+        <a href="index.html">Voltar</a>
+      </div>
+      
+    
+      
+    
+          
+</body>
+</html>

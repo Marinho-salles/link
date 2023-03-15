@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, blue, pink);
+    animation: float 3s linear infinite alternate;
+    background-size: 200% 200%;
+}
+@keyframes float {
+    from{background-position: 0 0;}
+    to{background-position: 100% 100%;}
+}
+section{
+    padding: 45px;
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    box-shadow: 2px 15px 20px, rgba(61, 61, 61, .4)
+}
+header{
+    width: none;
+}
+header h3{
+    color: black;
+    font-size: 1.4rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    
+
+}
+main a{
+    background: #63a;
+    padding: 15px 0;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 10px 10px #d87093;
+    transition: all .5s ease-in-out;
+
+}
+main a:hover{
+    opacity: .89;
+}
+.footer{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+@media(max-width: 560px){
+    section{
+        width: auto;
+        padding: auto;
+    }
+
+}
+header img{
+    width: 100px 100px;
+    
+}
+header h3 {
+    font-size: 1.3rem;
+}
+main{
+    gap: 15px;
+}
+main a {
+    padding: 10px;
+    box-shadow: 5px 5px #d87093;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: black;
+    margin-left: 7%;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: black;
+    margin-left: 10%;
+} 
+
+#check{
+    display: inline-block;
+}
+
+
+
+/* Elemento de tag <body> */
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    justify-content: center;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="telefone"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: black;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+
+}
+.voltar {
+    font-size: 1.2em;
+    background: black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.3em 0.6em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+    
+
+}
